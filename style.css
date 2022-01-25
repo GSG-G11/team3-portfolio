@@ -84,3 +84,9 @@ input:focus textarea:focus {
 .form textarea {
     display: block;
 }
+
+@media (max-width: 600px) {
+    .form {
+        width: 90%;
+    }
+}
