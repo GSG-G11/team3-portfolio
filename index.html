@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
     <!--link Poppins font from google font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&family=Mea+Culpa&family=Palanquin+Dark:wght@400;500;600&family=Parisienne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,300&family=Rowdies:wght@300&family=Sarabun:wght@100;200&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&family=Mea+Culpa&family=Palanquin+Dark:wght@400;500;600&family=Parisienne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,300&family=Rowdies:wght@300&family=Sarabun:wght@100;200&display=swap"
+        rel="stylesheet" />
     <!-- link font awwsome icons -->
-    <script
-      src="https://kit.fontawesome.com/57c783de70.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
+    <script src="https://kit.fontawesome.com/57c783de70.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
     <main>
-      <nav></nav>
-      <header></header>
-      <section class="our-team"></section>
-      <section class="about-us"></section>
-      <section class="form"></section>
-      <footer></footer>
+        <nav></nav>
+        <header></header>
+        <section class="our-team"></section>
+        <section class="about-us"></section>
+        <section class="form-section">
+            <h2 class="form-title">Do you want to hire us?</h2>
+            <form action="" class="form">
+                <label for="name" class="form-label">name:</label>
+                <input type="text" id="name" class="form-input">
+                <label class="form-label" for="email">Email:</label>
+                <input type="text" class="form-input" id="email">
+                <label class="form-label" for="message">Message:</label>
+                <textarea id="message" class="form-text-area" style="resize: none;"></textarea>
+                <input class="form-submit" type="submit" value="submit">
+            </form>
+        </section>
+        <footer></footer>
     </main>
-  </body>
+</body>
+
 </html>

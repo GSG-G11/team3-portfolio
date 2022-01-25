@@ -1,7 +1,86 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  height: 100vh;
-  font-family: Poppins;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+
+/* This code for remove borders around input and textarea fields */
+
+input,
+textarea {
+    border: 0;
+    outline: 0;
+}
+
+input:focus textarea:focus {
+    outline: none!important;
+}
+
+.form-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+}
+
+.form-title {
+    margin-bottom: 30px;
+}
+
+.form {
+    border-radius: 10px;
+    background-color: #C4C4C4;
+    padding: 30px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-label {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.form-input {
+    width: 70%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.form-text-area {
+    padding: 10px;
+    width: 90%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    height: 100px;
+}
+
+.form-submit {
+    font-weight: bold;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    align-self: center;
+    bottom: 20px;
+    right: 65px;
+    border: none;
+    background-color: #004568;
+    color: #FFFFFF;
+    font-size: 20px;
+    transition: all ease-in-out 0.3s;
+}
+
+.form-submit:hover {
+    background-color: #FFFFFF;
+    color: #004568;
+    width: 170px;
+}
+
+.form input,
+.form textarea {
+    display: block;
 }
