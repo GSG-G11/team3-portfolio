@@ -2,9 +2,111 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* height: 100vh; */
   font-family: Poppins;
 }
 /* welcome section */
+/* Our team section  */
+.our-team {
+  max-width: 1500px;
+  margin: auto;
+}
+.text {
+  width: fit-content;
+  margin: 50px 90px 0;
+}
+.card img {
+  border-radius: 15px;
+  width: 100px;
+  height: 100px;
+}
+.img {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+.card img:hover {
+  width: 110px;
+  height: 110px;
+}
+.ourTeam {
+  display: flex;
+  justify-content: center;
+}
+.ourTeam .card {
+  height: 300px;
+  width: 250px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
+  margin: 40px 80px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.content .Discription {
+  color: rgba(0, 0, 0, 0.5);
+}
+.icons {
+  margin-top: 45px;
+}
+.icons ul {
+  display: flex;
+  width: 150px;
+  background-color: #004568;
+  padding: 10px;
+  margin: -5px auto;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+.icons ul li {
+  list-style-type: none;
+}
+.icons ul li a {
+  direction: none;
+  color: white;
+  font-size: 20px;
+}
+.icons ul li a img {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+@media (min-width: 1800px) {
+  .ourTeam {
+    display: flex;
+    max-width: 1500px;
+    justify-content: center;
+    margin: auto;
+  }
+  .ourTeam .card {
+    margin: 40px;
+  }
+  .container {
+    display: flex;
+  }
+}
+@media (max-width: 600px) {
+  .ourTeam {
+    display: block;
+    margin: 10px 35px;
+  }
+  .ourTeam .card {
+    margin: auto;
+    margin-bottom: 15px;
+  }
+  .text {
+    text-align: center;
+    width: 150px;
+  }
+}
+@media (min-width: 600px) and (max-width: 900px) {
+  .ourTeam .card {
+    margin: 40px;
+  }
+}
+/* End The Our Team Section */
+/* welcom section */
 .hero {
   background-image: url(./background-image/background.jpg);
   background-size: cover;
@@ -39,7 +141,7 @@
     width: 90%;
   }
 }
-
+/* about as section */
 .about-us {
   max-width: 700px;
   height: 300px;
@@ -63,4 +165,146 @@ hr {
 }
 .about-discription {
   font-size: 15px;
+}
+
+/* Navbar code written below -->*/
+
+nav {
+  display: flex;
+  align-items: space-between;
+  justify-content: space-between;
+  width: 100%;
+  height: 75px;
+  background-color: #545456;
+  line-height: 75px;
+  padding: 0px 100px;
+  position: fixed;
+  z-index: 1;
+}
+nav .logo {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  animation: cardFromRight 1s ease-in-out;
+}
+
+nav img {
+  height: 75px;
+  transition: all 0.6s ease-in;
+}
+
+nav img:hover {
+  transform: scale(1.1);
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  animation: cardFromLeft 1s ease-in-out;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 0px 32px;
+}
+nav ul li a:hover {
+  color: #004568;
+}
+nav ul li .active {
+  color: #c0d96f;
+}
+
+label #btn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@keyframes cardFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100vw) scale(0);
+  }
+}
+@keyframes cardFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100vw) scale(0);
+  }
+}
+
+/* Responsive with tablet -->*/
+@media screen and (max-width: 1200px) {
+  /* Navbar responsive code -->*/
+  nav {
+    display: flex;
+
+    width: 100%;
+    height: 75px;
+    background-color: #545456;
+    line-height: 75px;
+    padding: 0px 100px;
+    position: fixed;
+    z-index: 1;
+  }
+
+  nav ul li {
+    position: block;
+    height: 300px;
+  }
+
+  nav ul li a {
+    font-size: 15px;
+  }
+  nav ul li a:hover,
+  nav ul li .active {
+    color: #004568;
+  }
+}
+
+/* Responsive with phone -->*/
+@media screen and (max-width: 600px) {
+  /* Navbar responsive code -->*/
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1px;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #545456;
+    top: 75px;
+    left: -100%;
+    text-align: center;
+    justify-content: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+  }
+
+  label #btn {
+    display: inline-block;
+  }
+
+  label :hover,
+  label .active {
+    color: #004568;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
 }
