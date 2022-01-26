@@ -5,6 +5,7 @@
   /* height: 100vh; */
   font-family: Poppins;
 }
+/* welcome section */
 /* Our team section  */
 .our-team {
   max-width: 1500px;
@@ -105,7 +106,7 @@
   }
 }
 /* End The Our Team Section */
-
+/* welcom section */
 .hero {
   background-image: url(./background-image/background.jpg);
   background-size: cover;
@@ -135,6 +136,35 @@
   .discription {
     font-size: 15px;
   }
+
+  .about-us {
+    width: 90%;
+  }
+}
+/* about as section */
+.about-us {
+  max-width: 700px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 100px auto;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  gap: 10px;
+}
+hr {
+  border-top: 1px solid rgba(0, 0, 0, 0.452);
+  width: 100%;
+}
+.about-title {
+  font-size: 20px;
+}
+.about-discription {
+  font-size: 15px;
 }
 
 /* Navbar code written below -->*/
