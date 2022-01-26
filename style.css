@@ -6,6 +6,10 @@
   font-family: Poppins;
 }
 /* Our team section  */
+.our-team {
+  max-width: 1500px;
+  margin: auto;
+}
 .text {
   width: fit-content;
   margin: 50px 90px 0;
@@ -24,11 +28,11 @@
   width: 110px;
   height: 110px;
 }
-.our-team {
+.ourTeam {
   display: flex;
   justify-content: center;
 }
-.our-team .card {
+.ourTeam .card {
   height: 300px;
   width: 250px;
   padding: 15px;
@@ -68,10 +72,13 @@
 }
 
 @media (min-width: 1800px) {
-  .our-team {
+  .ourTeam {
     display: flex;
+    max-width: 1500px;
+    justify-content: center;
+    margin: auto;
   }
-  .our-team .card {
+  .ourTeam .card {
     margin: 40px;
   }
   .container {
@@ -79,11 +86,11 @@
   }
 }
 @media (max-width: 600px) {
-  .our-team {
+  .ourTeam {
     display: block;
     margin: 10px 35px;
   }
-  .our-team .card {
+  .ourTeam .card {
     margin: auto;
     margin-bottom: 15px;
   }
@@ -93,7 +100,7 @@
   }
 }
 @media (min-width: 600px) and (max-width: 900px) {
-  .our-team .card {
+  .ourTeam .card {
     margin: 40px;
   }
 }
