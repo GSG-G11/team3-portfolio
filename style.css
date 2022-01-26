@@ -34,10 +34,14 @@
   .discription {
     font-size: 15px;
   }
+
+  .about-us {
+    width: 90%;
+  }
 }
 
 .about-us {
-  max-width: 500px;
+  max-width: 700px;
   height: 300px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
