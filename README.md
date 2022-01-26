@@ -49,10 +49,10 @@
 
 ## Team Members :1234: 
 
-- Khaled Elkhoudary
-- Mohammed Hamada
-- Salma Issa
-- Deena Alghazali.
+- [Salma Issa](https://github.com/SalmaIssa96)
+- [Deena Alghazali](https://github.com/DeenaAlghazali)
+- [Khaled Elkhoudary](https://github.com/K6a1ed) 
+- [Mohammed Hamada](https://github.com/Mohammed-Hamada)
 
 
 
