@@ -2,8 +2,110 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* height: 100vh; */
   font-family: Poppins;
 }
+/* Our team section  */
+.our-team {
+  max-width: 1500px;
+  margin: auto;
+}
+.text {
+  width: fit-content;
+  margin: 50px 90px 0;
+}
+.card img {
+  border-radius: 15px;
+  width: 100px;
+  height: 100px;
+}
+.img {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+.card img:hover {
+  width: 110px;
+  height: 110px;
+}
+.ourTeam {
+  display: flex;
+  justify-content: center;
+}
+.ourTeam .card {
+  height: 300px;
+  width: 250px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
+  margin: 40px 80px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.content .Discription {
+  color: rgba(0, 0, 0, 0.5);
+}
+.icons {
+  margin-top: 45px;
+}
+.icons ul {
+  display: flex;
+  width: 150px;
+  background-color: #004568;
+  padding: 10px;
+  margin: -5px auto;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+.icons ul li {
+  list-style-type: none;
+}
+.icons ul li a {
+  direction: none;
+  color: white;
+  font-size: 20px;
+}
+.icons ul li a img {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+@media (min-width: 1800px) {
+  .ourTeam {
+    display: flex;
+    max-width: 1500px;
+    justify-content: center;
+    margin: auto;
+  }
+  .ourTeam .card {
+    margin: 40px;
+  }
+  .container {
+    display: flex;
+  }
+}
+@media (max-width: 600px) {
+  .ourTeam {
+    display: block;
+    margin: 10px 35px;
+  }
+  .ourTeam .card {
+    margin: auto;
+    margin-bottom: 15px;
+  }
+  .text {
+    text-align: center;
+    width: 150px;
+  }
+}
+@media (min-width: 600px) and (max-width: 900px) {
+  .ourTeam .card {
+    margin: 40px;
+  }
+}
+/* End The Our Team Section */
+
 .hero {
   background-image: url(./background-image/background.jpg);
   background-size: cover;
