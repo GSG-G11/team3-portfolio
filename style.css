@@ -111,7 +111,7 @@ label #btn {
 .form-section {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 700px;
 }
 
 .form-title {
@@ -121,7 +121,7 @@ label #btn {
 .form {
     border-radius: 10px;
     background-color: #c4c4c4;
-    padding: 30px;
+    padding: 35px;
     width: 700px;
     display: flex;
     flex-direction: column;
@@ -135,7 +135,7 @@ label #btn {
 }
 
 .form-input {
-    width: 80%;
+    width: 100%;
     border-radius: 10px;
     margin-bottom: 30px;
     padding: 10px;
@@ -143,7 +143,7 @@ label #btn {
 
 .form-text-area {
     padding: 10px;
-    width: 90%;
+    width: 100%;
     border-radius: 10px;
     margin-bottom: 30px;
     height: 100px;
@@ -353,6 +353,7 @@ hr {
 /* footer section */
 
 .footer {
+    text-transform: capitalize;
     padding: 40px 0;
     display: flex;
     justify-content: space-around;
